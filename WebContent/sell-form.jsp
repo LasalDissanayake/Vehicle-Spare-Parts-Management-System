@@ -43,8 +43,8 @@
 			</div>
 
 			<ul class="navbar-nav">
-				<li><a href="<%=request.getContextPath()%>/list_paymentUser"
-					class="nav-link">Payment</a></li>
+				<li><a href="<%=request.getContextPath()%>/sell_Item"
+					class="nav-link">Product</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -53,55 +53,67 @@
 	<div class="container col-md-5">
 		<div class="card">
 			<div class="card-body">
-				<c:if test="${Payment != null}">
-					<form action="updatePaymentUser" method="post">
+				<c:if test="${Product != null}">
+					<form action="updateProductUser" method="post">
 				</c:if>
-				<c:if test="${Payment == null}">
-					<form action="insertPaymentUser" method="post">
+				<c:if test="${Product == null}">
+					<form action="insertProductUser" method="post">
 				</c:if>
 
 				<caption>
 					<h2>
-						<c:if test="${Payment != null}">
-            			Edit Payment
+						<c:if test="${Product != null}">
+            			Edit Product
             		</c:if>
-						<c:if test="${Payment == null}">
-            			Add New Payment
+						<c:if test="${Product == null}">
+            			Add New Product
             		</c:if>
 					</h2>
 				</caption>
 
-				<c:if test="${Payment != null}">
-					<input type="hidden" name="paymentID" value="<c:out value='${Payment.paymentID}' />" />
+				<c:if test="${Product != null}">
+					<input type="hidden" name="productID" value="<c:out value='${Product.productID}' />" />
 				</c:if>
 
 				<fieldset class="form-group">
-					<label>User ID</label> <input type="number"
-						value="<%= session.getAttribute("userID") %>" class="form-control"
-						name="userID" readonly>
+					<label>Product Name</label> <input type="text"
+						value="<c:out value='${Product.productName}' />" class="form-control"
+						name="productName" required="required">
 				</fieldset>
 
 				<fieldset class="form-group">
-					<label>Payment Amount</label> <input type="number"
-						value="<c:out value='${Payment.paymentAmount}' />" class="form-control"
-						name="paymentAmount" required="required">
+				    <label>Description</label> 
+				    <textarea class="form-control" name="description" rows="5" required="required"><c:out value="${Product.description}" /></textarea>
 				</fieldset>
 
+
 				<fieldset class="form-group">
-				    <label for="paymentMethod">Payment Method</label>
-				    <select class="form-control" name="paymentMethod" id="paymentMethod" required="required">
-				        <option value="Credit Card" <c:if test="${Payment.paymentMethod eq 'Credit Card'}">selected</c:if>>Credit Card</option>
-				        <option value="PayPal" <c:if test="${Payment.paymentMethod eq 'PayPal'}">selected</c:if>>PayPal</option>
-				        <option value="Debit Card" <c:if test="${Payment.paymentMethod eq 'Debit Card'}">selected</c:if>>Debit Card</option>
+				    <label>Category</label> 
+				    <select class="form-control" name="category" required="required">
+				        <c:out value='${Product.category}' />
+				        <option value="Phone">Phone</option>
+				        <option value="Laptop">Laptop</option>
+				        <option value="TV">TV</option>
 				    </select>
 				</fieldset>
 
 				
+				<fieldset class="form-group">
+					<label>Price</label> <input type="number"
+						value="<c:out value='${Product.price}' />" class="form-control"
+						name="price" required="required">
+				</fieldset>
 				
 				<fieldset class="form-group">
-					<label>Payment Date</label> <input type="date"
-						value="<c:out value='${Payment.paymentDate}' />" class="form-control"
-						name="paymentDate" required="required">
+					<label>Quantity</label> <input type="number"
+						value="<c:out value='${Product.quantity}' />" class="form-control"
+						name="quantity" required="required">
+				</fieldset>
+				
+				<fieldset class="form-group">
+					<label>User ID</label> <input type="number"
+						value="<%= session.getAttribute("userID") %>" class="form-control"
+						name="userID" readonly>
 				</fieldset>
 
 				<button type="submit" class="btn btn-success">Save</button>
@@ -111,7 +123,7 @@
 	</div>
 	<footer>
         <!-- Footer content here -->
-        <p>&copy; 2024 Product Management</p>
+        <p>&copy; 2024 Product  sell Management</p>
     </footer>
 </body>
 </html>

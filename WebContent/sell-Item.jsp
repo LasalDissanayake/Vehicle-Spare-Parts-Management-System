@@ -54,37 +54,39 @@
                     <div class="main-content">
                         <!-- Main content here -->
                         <div class="container">
-                            <h3 class="text-center">List of Feedbacks</h3>
-                            <hr>
+                            <h3 class="text-center">List of Products</h3>
+                            
                             <div class="container text-left">
-                                <a href="<%=request.getContextPath()%>/newFeedbackUser" class="btn btn-success">Add New Feedback</a>
+                                <a href="<%=request.getContextPath()%>/newProductUser" class="btn btn-success">Add New Product</a>
                             </div>
                             <br>
                             <div class="table-responsive text-center">
                                 <table class="table table-bordered d-inline-block">
                                     <thead>
                                         <tr>
-                                            <th>Feedback ID</th>
-                                            <th>User ID</th>
                                             <th>Product ID</th>
-                                            <th>Ratings</th>
-                                            <th>Message</th>
-                                            <th>FeedbackDate</th>
+                                            <th>Product Name</th>
+                                            <th>Description</th>
+                                            <th>Category</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>User ID</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <c:forEach var="Feedback" items="${listFeedbacksUser}">
+                                        <c:forEach var="Product" items="${listProductsUser}">
                                             <tr>
-                                                <td><c:out value="${Feedback.feedbackID}" /></td>
-                                                <td><c:out value="${Feedback.userID}" /></td>
-                                                <td><c:out value="${Feedback.productID}" /></td>
-                                                <td><c:out value="${Feedback.ratings}" /></td>
-                                                <td><c:out value="${Feedback.message}" /></td>
-                                                <td><c:out value="${Feedback.feedbackDate}" /></td>      
+                                                <td><c:out value="${Product.productID}" /></td>
+                                                <td><c:out value="${Product.productName}" /></td>
+                                                <td><c:out value="${Product.description}" /></td>
+                                                <td><c:out value="${Product.category}" /></td>
+                                                <td><c:out value="${Product.price}" /></td>
+                                                <td><c:out value="${Product.quantity}" /></td>  
+                                                <td><c:out value="${Product.userID}" /></td>     
                                                 <td>
-                                                    <a href="<%=request.getContextPath()%>/editFeedbackUser?feedbackID=<c:out value='${Feedback.feedbackID}' />" class="btn btn-primary">Edit</a>
-                                                    <a href="<%=request.getContextPath()%>/deleteFeedbackUser?feedbackID=<c:out value='${Feedback.feedbackID}' />" class="btn btn-danger">Delete</a>
+                                                    <a href="<%=request.getContextPath()%>/editProductUser?productID=<c:out value='${Product.productID}' />" class="btn btn-primary">Edit</a>
+                                                    <a href="<%=request.getContextPath()%>/deleteProductUser?productID=<c:out value='${Product.productID}' />" class="btn btn-danger">Delete</a>
                                                 </td>
                                             </tr>
                                         </c:forEach>
