@@ -3,26 +3,33 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-	<style>
-			body {
-					    background-color: #E5E1DA !important;
-					}
-			footer {
-			            position: fixed;
-			            bottom: 0;
-			            width: 100%;
-			            background-color: #333333;
-			            color: white;
-			            text-align: center;
-			            padding: 10px 0;
-			        }
-			        
-			 .card-body {
-				        background-color: #F2F1EB; 
-				        padding: 20px; 
-				    }
-    </style>
-<title>Electro-elegance</title>
+<style>
+body {
+	background-color: #E5E1DA !important;
+	background-image: url('bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.card-body {
+    background-color: rgba(242, 241, 235, 0.5); /* Light gray with adjusted opacity */
+    padding: 20px;
+}
+
+
+</style>
+<title>Motor Mart</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -34,7 +41,8 @@
 		<nav class="navbar navbar-expand-md navbar-dark"
 			style="background-color: #333333">
 			<div>
-				<a href="https://www.javaguides.net" class="navbar-brand"> User Management App </a>
+				<a href="#" class="navbar-brand"> User
+					Management  </a>
 			</div>
 
 			<ul class="navbar-nav">
@@ -66,7 +74,8 @@
 				</caption>
 
 				<c:if test="${User != null}">
-					<input type="hidden" name="id" value="<c:out value='${User.userID}' />" />
+					<input type="hidden" name="id"
+						value="<c:out value='${User.userID}' />" />
 				</c:if>
 
 				<fieldset class="form-group">
@@ -84,19 +93,21 @@
 				<fieldset class="form-group">
 					<label>Phone Number</label> <input type="text"
 						value="<c:out value='${User.phoneNumber}' />" class="form-control"
-						name="phoneNumber" required="required" pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+						name="phoneNumber" required="required" pattern="[0-9]{10}"
+						title="Please enter a 10-digit phone number">
 				</fieldset>
-				
+
 				<fieldset class="form-group">
 					<label>Address</label> <input type="text"
 						value="<c:out value='${User.address}' />" class="form-control"
 						name="address" required="required">
 				</fieldset>
-				
+
 				<fieldset class="form-group">
 					<label>Password</label> <input type="password"
 						value="<c:out value='${User.password}' />" class="form-control"
-						name="password" required="required" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{1,6}$" 
+						name="password" required="required"
+						pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{1,6}$"
 						title="Password must contain at least one letter, one number, and be at most 6 characters long">
 				</fieldset>
 
@@ -106,8 +117,8 @@
 		</div>
 	</div>
 	<footer>
-        <!-- Footer content here -->
-        <p>&copy; 2024 User Management</p>
-    </footer>
+		<!-- Footer content here -->
+		<p>&copy; 2024 Motor Mart Sparepart management Application</p>
+	</footer>
 </body>
 </html>

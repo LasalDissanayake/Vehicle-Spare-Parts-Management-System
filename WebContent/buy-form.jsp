@@ -4,14 +4,14 @@
 <html>
 <head>
 <style>
-    body {
-        background-color: #E5E1DA !important;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
+   body {
+	background-color: #E5E1DA !important;
+	background-image: url('bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 
     footer {
         width: 100%;

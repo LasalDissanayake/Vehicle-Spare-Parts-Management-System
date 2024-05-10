@@ -2,80 +2,94 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-    <title>Electro-elegance</title>
+    <title>Motor Mart</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <style>
-   		 body {
-			 background-color: #E5E1DA !important;
-				}
-		table.table-bordered > thead > tr > th,
-	    table.table-bordered > tbody > tr > td {
-	        border: 2px solid #000; /* Change border color here */
-	    }
-        .sidebar {
-		    height: 100%;
-		    width: 250px;
-		    position: fixed;
-		    left: 0;
-		    background-color: #cc9966;
-		    padding-top: 10px; /* Adjust padding to fit content */
-		}
-		
-		.nav-item {
-		    margin-bottom: 10px; /* Add some space between each navigation item */
-		}
-		
-		.nav-link {
-		    color: #ffff; /* Default text color */
-		    transition: color 0.3s ease; /* Smooth transition effect for text color */
-		}
-		
-		.nav-link:hover {
-		    color: #fff; /* Change text color on hover */
-		}
-		
-		/* Active link style */
-		.nav-link.active {
-		    font-weight: bold; /* Make the active link bold */
-		}
-		
-		/* Add background color and padding to the active link */
-		.nav-link.active {
-		    background-color: #333333;
-		    padding: 8px 15px;
-		    border-radius: 5px;
-		}
-		
-		/* Additional styles for the sidebar */
-		.sidebar {
-		    padding: 20px;
-		    border-right: 1px solid #ccc; /* Add a border to separate sidebar from content */
-		}
-        .content {
-            padding: 20px;
-        }
-        .main-content {
-            margin: 0 auto; 
-            max-width: 1000px; 
-        }
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #333333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
+ body {
+    background-color: #E5E1DA !important;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sidebar {
+    height: calc(100vh - 60px); /* Adjusted sidebar height */
+    width: 250px;
+    position: fixed;
+    left: 0;
+    background-color: #34495e; /* Dark blue background */
+    padding-top: 10px; /* Adjust padding to fit content */
+}
+
+.sidebar .nav-link {
+    color: #fff; /* White text color */
+    transition: color 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    color: #ccc; /* Light gray text color on hover */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    background-color: #333333;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.sidebar {
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Increase opacity of table */
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > td {
+    border: 2px solid #000; /* Change border color here */
+    opacity: 0.9; /* Increase opacity */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Adjust opacity and make the container transparent */
+.container {
+    background-color: rgba(255, 255, 255, 0.5); /* White with opacity */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px; /* Add rounded corners */
+}
+.table-container {
+    text-align: center; /* Center-align the contents within the container */
+}
+
+.table-container table {
+    margin-left: auto; /* Set left margin to auto */
+    margin-right: auto; /* Set right margin to auto */
+}
+
+
+
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #333333">
             <div>
-                <a href="https://www.javaguides.net" class="navbar-brand"> User Management App </a>
+                <a href="#" class="navbar-brand"> User Management  </a>
             </div>
             <ul class="navbar-nav">
                 <li><a href="<%=request.getContextPath()%>/list_user" class="nav-link">Users</a></li>
@@ -123,6 +137,8 @@
                             </div>
                             <br>
                             <div class="table-responsive text-center">
+                            <container>
+                            <div class="table-container">
                                 <table class="table table-bordered d-inline-block">
                                     <thead>
                                         <tr>
@@ -152,6 +168,8 @@
                                         </c:forEach>
                                     </tbody>
                                 </table>
+                                <div class="table-container">
+                                </container>
                             </div>
                         </div>
                     </div>
@@ -162,7 +180,7 @@
     
     <footer>
         <!-- Footer content here -->
-        <p>&copy; 2024 User Management</p>
+        <p>&copy;2024 Motor Mart Sparepart management Application</p>
     </footer>
 </body>
 </html>
