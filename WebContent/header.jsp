@@ -32,7 +32,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-12">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="#">
                                 <h1>Motor<span>Mart</span></h1>
                                 <!-- <img src="img/logo.jpg" alt="Logo"> -->
                             </a>
@@ -91,7 +91,7 @@
 
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto">
-                            <a href="3" class="nav-item nav-link active">Home</a>
+                            <a href="home.jsp" class="nav-item nav-link active">Home</a>
                             <a href="signin-signup.jsp" class="nav-item nav-link">Sign Up</a>
                             <a href="signin-signup.jsp" class="nav-item nav-link">Login</a>
                             
