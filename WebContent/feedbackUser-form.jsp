@@ -39,7 +39,7 @@
 		<nav class="navbar navbar-expand-md navbar-dark"
 			style="background-color: #333333">
 			<div>
-				<a href="https://www.javaguides.net" class="navbar-brand"> Product Management App </a>
+				<a href="https://www.javaguides.net" class="navbar-brand"> Product Management </a>
 			</div>
 
 			<ul class="navbar-nav">
