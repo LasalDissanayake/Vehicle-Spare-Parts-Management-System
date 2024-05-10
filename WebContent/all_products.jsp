@@ -3,18 +3,17 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-    <title>Electro-elegance</title>
+    <title>Motor Mart</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <style>
         body {
             background-color: #E5E1DA !important;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         footer {
@@ -27,8 +26,12 @@
         }
 
         .card-body {
-            background-color: #F2F1EB; 
-            padding: 20px; 
+            background-color: rgba(173, 216, 230, 0.5); /* Light blue background with opacity */
+            padding: 20px;
+        }
+        .container{
+         background-color: rgba(173, 216, 230, 0.7); /* Light blue background with opacity */
+            padding: 20px;
         }
     </style>
 </head>
@@ -37,7 +40,7 @@
         <nav class="navbar navbar-expand-md navbar-dark"
             style="background-color:#333333">
             <div>
-                <a href="https://www.javaguides.net" class="navbar-brand"> Vehicle Spare MAnagement </a>
+                <a href="https://www.javaguides.net" class="navbar-brand"> Vehicle Spare Management </a>
             </div>
             <ul class="navbar-nav">
                 <li><a href="<%=request.getContextPath()%>/buy_list"

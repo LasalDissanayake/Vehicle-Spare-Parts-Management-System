@@ -4,26 +4,29 @@
 <html>
 <head>
 <style>
-			body {
-					    background-color: #E5E1DA !important;
-					}
-			footer {
-			            
-			            bottom: 0;
-			            width: 100%;
-			            background-color: #333333;
-			            color: white;
-			            text-align: center;
-			            padding: 10px 0;
-			        }
-			        
-			 .card-body {
-				        background-color: #F2F1EB; 
-				        padding: 20px; 
-				    }
-			    
-    </style>
-<title>Electro-elegance</title>
+body {
+	background-color: #E5E1DA !important;
+	background-image: url('bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+footer {
+	bottom: 0;
+	width: 100%;
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.card-body {
+	background-color: #F2F1EB;
+	padding: 20px;
+}
+</style>
+<title>Motor Mart</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -35,7 +38,8 @@
 		<nav class="navbar navbar-expand-md navbar-dark"
 			style="background-color: #333333">
 			<div>
-				<a href="https://www.javaguides.net" class="navbar-brand"> Product Management App </a>
+				<a href="#" class="navbar-brand">
+					Product Management </a>
 			</div>
 
 			<ul class="navbar-nav">
@@ -67,44 +71,47 @@
 				</caption>
 
 				<c:if test="${Product != null}">
-					<input type="hidden" name="productID" value="<c:out value='${Product.productID}' />" />
+					<input type="hidden" name="productID"
+						value="<c:out value='${Product.productID}' />" />
 				</c:if>
 
 				<fieldset class="form-group">
 					<label>Product Name</label> <input type="text"
-						value="<c:out value='${Product.productName}' />" class="form-control"
-						name="productName" required="required">
+						value="<c:out value='${Product.productName}' />"
+						class="form-control" name="productName" required="required">
 				</fieldset>
 
 				<fieldset class="form-group">
-				    <label>Description</label> 
-				    <textarea class="form-control" name="description" rows="5" required="required"><c:out value="${Product.description}" /></textarea>
+					<label>Description</label>
+					<textarea class="form-control" name="description" rows="5"
+						required="required"><c:out
+							value="${Product.description}" /></textarea>
 				</fieldset>
 
 
 				<fieldset class="form-group">
-				    <label>Category</label> 
-				    <select class="form-control" name="category" required="required">
-				        <c:out value='${Product.category}' />
-				        <option value="Phone">Phone</option>
-				        <option value="Laptop">Laptop</option>
-				        <option value="TV">TV</option>
-				    </select>
+					<label>Category</label> <select class="form-control"
+						name="category" required="required">
+						<c:out value='${Product.category}' />
+						<option value="Phone">Phone</option>
+						<option value="Laptop">Laptop</option>
+						<option value="TV">TV</option>
+					</select>
 				</fieldset>
 
-				
+
 				<fieldset class="form-group">
 					<label>Price</label> <input type="number"
 						value="<c:out value='${Product.price}' />" class="form-control"
 						name="price" required="required">
 				</fieldset>
-				
+
 				<fieldset class="form-group">
 					<label>Quantity</label> <input type="number"
 						value="<c:out value='${Product.quantity}' />" class="form-control"
 						name="quantity" required="required">
 				</fieldset>
-				
+
 				<fieldset class="form-group">
 					<label>User ID</label> <input type="number"
 						value="<c:out value='${Product.userID}' />" class="form-control"
@@ -117,8 +124,8 @@
 		</div>
 	</div>
 	<footer>
-        <!-- Footer content here -->
-        <p>&copy; 2024 Product Management</p>
-    </footer>
+		<!-- Footer content here -->
+		<p>&copy; 2024 Motor Mart Sparepart management Application</p>
+	</footer>
 </body>
 </html>

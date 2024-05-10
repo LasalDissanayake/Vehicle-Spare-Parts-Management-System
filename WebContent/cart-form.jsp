@@ -4,24 +4,29 @@
 <html>
 <head>
 <style>
-			body {
-					    background-color: #E5E1DA !important;
-					}
-			footer {
-			            position: fixed;
-			            bottom: 0;
-			            width: 100%;
-			            background-color: #333333;
-			            color: white;
-			            text-align: center;
-			            padding: 10px 0;
-			        }
-			        
-			 .card-body {
-				        background-color: #F2F1EB; 
-				        padding: 20px; 
-				    }
-    </style>
+body {
+	background-color: #E5E1DA !important;
+	background-image: url('bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.card-body {
+	background-color: #F2F1EB;
+	padding: 20px;
+}
+</style>
 <title>Electro-elegance</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -34,7 +39,8 @@
 		<nav class="navbar navbar-expand-md navbar-dark"
 			style="background-color: #333333">
 			<div>
-				<a href="https://www.javaguides.net" class="navbar-brand"> Cart Management App </a>
+				<a href="https://www.javaguides.net" class="navbar-brand"> Cart
+					Management App </a>
 			</div>
 
 			<ul class="navbar-nav">
@@ -66,7 +72,8 @@
 				</caption>
 
 				<c:if test="${Cart != null}">
-					<input type="hidden" name="cartID" value="<c:out value='${Cart.cartID}' />" />
+					<input type="hidden" name="cartID"
+						value="<c:out value='${Cart.cartID}' />" />
 				</c:if>
 
 				<fieldset class="form-group">
@@ -86,13 +93,13 @@
 						value="<c:out value='${Cart.productName}' />" class="form-control"
 						name="productName" required="required">
 				</fieldset>
-				
+
 				<fieldset class="form-group">
 					<label>Quantity</label> <input type="number"
 						value="<c:out value='${Cart.quantity}' />" class="form-control"
 						name="quantity" required="required" min="0">
 				</fieldset>
-				
+
 				<fieldset class="form-group">
 					<label>Total Price</label> <input type="number"
 						value="<c:out value='${Cart.totalPrice}' />" class="form-control"
@@ -105,8 +112,8 @@
 		</div>
 	</div>
 	<footer>
-        <!-- Footer content here -->
-        <p>&copy; 2024 Cart Management</p>
-    </footer>
+		<!-- Footer content here -->
+		<p>&copy; Motor Mart Sparepart management Application</p>
+	</footer>
 </body>
 </html>

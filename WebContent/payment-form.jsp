@@ -4,24 +4,29 @@
 <html>
 <head>
 <style>
-			body {
-					    background-color: #E5E1DA !important;
-					}
-			footer {
-			            position: fixed;
-			            bottom: 0;
-			            width: 100%;
-			            background-color: #333333;
-			            color: white;
-			            text-align: center;
-			            padding: 10px 0;
-			        }
-			        
-			 .card-body {
-				        background-color: #F2F1EB; 
-				        padding: 20px; 
-				    }
-    </style>
+body {
+	background-color: #E5E1DA !important;
+	background-image: url('bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.card-body {
+	background-color: #F2F1EB;
+	padding: 20px;
+}
+</style>
 <title>Electro-elegance</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -34,7 +39,8 @@
 		<nav class="navbar navbar-expand-md navbar-dark"
 			style="background-color: #333333">
 			<div>
-				<a href="https://www.javaguides.net" class="navbar-brand"> Payment Management App </a>
+				<a href="https://www.javaguides.net" class="navbar-brand">
+					Payment Management  </a>
 			</div>
 
 			<ul class="navbar-nav">
@@ -66,7 +72,8 @@
 				</caption>
 
 				<c:if test="${Payment != null}">
-					<input type="hidden" name="paymentID" value="<c:out value='${Payment.paymentID}' />" />
+					<input type="hidden" name="paymentID"
+						value="<c:out value='${Payment.paymentID}' />" />
 				</c:if>
 
 				<fieldset class="form-group">
@@ -77,25 +84,31 @@
 
 				<fieldset class="form-group">
 					<label>Payment Amount</label> <input type="number"
-						value="<c:out value='${Payment.paymentAmount}' />" class="form-control"
-						name="paymentAmount" required="required">
+						value="<c:out value='${Payment.paymentAmount}' />"
+						class="form-control" name="paymentAmount" required="required">
 				</fieldset>
 
 				<fieldset class="form-group">
-				    <label for="paymentMethod">Payment Method</label>
-				    <select class="form-control" name="paymentMethod" id="paymentMethod" required="required">
-				        <option value="Credit Card" <c:if test="${Payment.paymentMethod eq 'Credit Card'}">selected</c:if>>Credit Card</option>
-				        <option value="PayPal" <c:if test="${Payment.paymentMethod eq 'PayPal'}">selected</c:if>>PayPal</option>
-				        <option value="Debit Card" <c:if test="${Payment.paymentMethod eq 'Debit Card'}">selected</c:if>>Debit Card</option>
-				    </select>
+					<label for="paymentMethod">Payment Method</label> <select
+						class="form-control" name="paymentMethod" id="paymentMethod"
+						required="required">
+						<option value="Credit Card"
+							<c:if test="${Payment.paymentMethod eq 'Credit Card'}">selected</c:if>>Credit
+							Card</option>
+						<option value="PayPal"
+							<c:if test="${Payment.paymentMethod eq 'PayPal'}">selected</c:if>>PayPal</option>
+						<option value="Debit Card"
+							<c:if test="${Payment.paymentMethod eq 'Debit Card'}">selected</c:if>>Debit
+							Card</option>
+					</select>
 				</fieldset>
 
-				
-				
+
+
 				<fieldset class="form-group">
 					<label>Payment Date</label> <input type="date"
-						value="<c:out value='${Payment.paymentDate}' />" class="form-control"
-						name="paymentDate" required="required">
+						value="<c:out value='${Payment.paymentDate}' />"
+						class="form-control" name="paymentDate" required="required">
 				</fieldset>
 
 				<button type="submit" class="btn btn-success">Save</button>
@@ -104,8 +117,8 @@
 		</div>
 	</div>
 	<footer>
-        <!-- Footer content here -->
-        <p>&copy; 2024 Payment Management</p>
-    </footer>
+		<!-- Footer content here -->
+		<p>&copy; 2024 Motor Mart Sparepart management Application</p>
+	</footer>
 </body>
 </html>

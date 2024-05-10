@@ -123,7 +123,7 @@
 	</div>
 	<footer>
         <!-- Footer content here -->
-        <p>&copy; 2024 Product Management</p>
+        <p>&copy; 2024 Product  sell Management</p>
     </footer>
 </body>
 </html>
