@@ -5,12 +5,11 @@
 <head>
 <style>
         body {
-            background-color: #E5E1DA !important;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
+           background-color: #E5E1DA !important;
+	background-image: url('bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
         }
 
         footer {
@@ -19,7 +18,7 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            margin-top: auto;
+            margin-top: 120px;
         }
 
         .card-body {
@@ -27,7 +26,7 @@
             padding: 20px; 
         }
     </style>
-<title>Electro-elegance</title>
+<title>Motor Mart</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
