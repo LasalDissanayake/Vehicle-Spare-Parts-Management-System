@@ -93,9 +93,10 @@ footer {
 					<label>Category</label> <select class="form-control"
 						name="category" required="required">
 						<c:out value='${Product.category}' />
-						<option value="Phone">Phone</option>
-						<option value="Laptop">Laptop</option>
-						<option value="TV">TV</option>
+						<option value="Engine">Engine Parts</option>
+						<option value="Electrical">Electrical Components<option>
+						<option value="Transmission">Transmission and Drivetrain Parts</option>
+						<option value="Body Parts">Body Parts</option>
 					</select>
 				</fieldset>
 
