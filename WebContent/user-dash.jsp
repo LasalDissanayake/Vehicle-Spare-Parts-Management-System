@@ -142,7 +142,7 @@
                     <div class="carousel-item">
                         <div class="carousel-img">
                             
-                            <img src="./assets/images/carousel-1.jpg" alt="Image">
+                            <img src="./assets/images/1.png" alt="Image">
                         </div>
                         <div class="carousel-text">
                             <h3>Revolutionize your vehicle parts management</h3>
@@ -155,7 +155,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="./assets/images/carousel-2.jpg" alt="Image">
+                            <img src="./assets/images/2.png" alt="Image">
                         </div>
                         <div class="carousel-text">
                             <h3>Effortlessly manage parts with MOTOR MART.</h3>
@@ -168,7 +168,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="./assets/images/carousel-3.jpg" alt="Image">
+                            <img src="./assets/images/3.png" alt="Image">
                         </div>
                         <div class="carousel-text">
                             <h3>Boost efficiency with MOTOR MART.</h3>
@@ -191,7 +191,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="./assets/images/about.jpg" alt="Image">
+                            <img src="./assets/images/4.png" alt="Image">
                         </div>
                     </div>
                     <div class="col-lg-6">

@@ -70,6 +70,7 @@
                     <label>User ID</label> 
                     <input type="number" value="<%= session.getAttribute("userID") %>" class="form-control" name="userID" readonly>
                 </fieldset>
+                
 
                 <fieldset class="form-group">
                     <label>Product ID</label> 

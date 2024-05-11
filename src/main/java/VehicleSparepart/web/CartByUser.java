@@ -88,7 +88,7 @@ public class CartByUser extends HttpServlet {
             throws SQLException, ServletException, IOException {
         int cartID = Integer.parseInt(request.getParameter("cartID"));
         Cart existingCart = cartDao.selectCart(cartID);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("buy-form.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("buyUpdate-form.jsp");
         request.setAttribute("Cart", existingCart);
         dispatcher.forward(request, response);
     }
