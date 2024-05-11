@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class DBConnect {
 	
-	private static String url = "jdbc:mysql://localhost:3306/property_management?useSSL=false";
+	private static String url = "jdbc:mysql://localhost:3306/vehicle_sparepart?useSSL=false";
 	private static String userName = "root";
 	private static String password = "12345678";
 	private static Connection con = null;

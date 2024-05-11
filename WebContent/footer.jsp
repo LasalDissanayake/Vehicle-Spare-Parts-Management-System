@@ -1,8 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
- <head>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
         <meta charset="utf-8">
         <title>Motor Mart</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -13,22 +13,23 @@
         <link href="img/favicon.ico" rel="icon">
 
         <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-        
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="./assets/lib/flaticon/font/flaticon.css" rel="stylesheet">
         <link href="./assets/lib/animate/animate.min.css" rel="stylesheet">
-        <link href="./assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> 
+        <link href="./assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
         <link href="./assets/css/style2.css" rel="stylesheet">
     </head>
 
-<body>
+    <body>
 
-	 <!-- Footer Start -->
+        <!-- Footer Start -->
         <div class="footer">
             <div class="container">
                 <div class="row">
@@ -84,4 +85,21 @@
             </div>
         </div>
         <!-- Footer End -->
-</html>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/lib/easing/easing.min.js"></script>
+        <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="./assets/lib/waypoints/waypoints.min.js"></script>
+        
+        <script src="./assets/lib/counterup/counterup.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="./assets/mail/jqBootstrapValidation.min.js"></script>
+        <script src="./assets/mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="./assets/js/main2.js"></script>
+</body>
+    </html>

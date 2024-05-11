@@ -38,7 +38,7 @@
 		<nav class="navbar navbar-expand-md navbar-dark"
 			style="background-color: #333333">
 			<div>
-				<a href="https://www.javaguides.net" class="navbar-brand"> Product Management App </a>
+				<a href="https://www.javaguides.net" class="navbar-brand"> Product Management </a>
 			</div>
 
 			<ul class="navbar-nav">
@@ -110,7 +110,7 @@
 	</div>
 	<footer>
         <!-- Footer content here -->
-        <p>&copy; 2024 Product Management</p>
+        <p>&copy; 2024 Motor Mart Sparepart management Application</p>
     </footer>
 </body>
 </html>

@@ -113,12 +113,7 @@ footer {
 						name="quantity" required="required">
 				</fieldset>
 
-				<fieldset class="form-group">
-					<label>User ID</label> <input type="number"
-						value="<c:out value='${Product.userID}' />" class="form-control"
-						name="userID" required="required">
-				</fieldset>
-
+			
 				<button type="submit" class="btn btn-success">Save</button>
 				</form>
 			</div>

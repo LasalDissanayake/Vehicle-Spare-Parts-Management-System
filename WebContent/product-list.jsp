@@ -159,7 +159,7 @@ footer {
 												<td><c:out value="${Product.category}" /></td>
 												<td><c:out value="${Product.price}" /></td>
 												<td><c:out value="${Product.quantity}" /></td>
-												<td><c:out value="${Product.userID}" /></td>
+											
 												<td><a
 													href="<%=request.getContextPath()%>/editProduct?productID=<c:out value='${Product.productID}' />"
 													class="btn btn-primary">Edit</a> <a
