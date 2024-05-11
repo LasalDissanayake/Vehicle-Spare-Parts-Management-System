@@ -100,10 +100,7 @@
 
                             <div class="navbar-nav mr-auto">
                             
-                                <div class="ml-auto">
-                                    <a class="btn btn-custom"
-                                        href="<%=request.getContextPath()%>/sell_Item">MyProducts</a>
-                                </div>
+                                
                                 <div class="ml-auto">
                                     <a class="btn btn-custom" href="<%=request.getContextPath()%>/buy_list">Cart</a>
                                 </div>

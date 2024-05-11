@@ -103,7 +103,7 @@
     </div>
     <footer>
         <!-- Footer content here -->
-        <p>&copy; 2024 Product Management</p>
+        <p>&copy; 2024 Motor Mart Sparepart management Application</p>
     </footer>
 
 <script>
